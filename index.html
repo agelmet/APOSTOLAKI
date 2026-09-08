@@ -3,7 +3,7 @@
 <!--
   Εβελίνα Αποστολάκη — Ψυχολόγος · Ψυχοθεραπεύτρια, Καλαμάτα
   Built by Advon Media — https://advonmedia.com
-  Design pass 09.2026 — warm editorial (sand / charcoal), all 17 doctoranytime reviews, map in contact.
+  Design pass 09.2026 — warm editorial (sand / charcoal), all doctoranytime reviews (count never stated — «δεκάδες»), map in contact.
   INDEXING STATE: PREVIEW (GitHub Pages) — noindex + robots Disallow until the domain is live.
 -->
 <head>
@@ -12,7 +12,7 @@
 <meta name="robots" content="noindex,nofollow">
 
 <title>Ψυχολόγος Καλαμάτα | Εβελίνα Αποστολάκη, MSc</title>
-<meta name="description" content="Ψυχολόγος – Ψυχοθεραπεύτρια στην Καλαμάτα. Γνωσιακή-συμπεριφοριστική ψυχοθεραπεία ενηλίκων και εφήβων, δια ζώσης και online. 10/10 από 17 αξιολογήσεις στο doctoranytime. Κλείστε την πρώτη σας συνεδρία.">
+<meta name="description" content="Ψυχολόγος – Ψυχοθεραπεύτρια στην Καλαμάτα. Γνωσιακή-συμπεριφοριστική ψυχοθεραπεία ενηλίκων και εφήβων, δια ζώσης και online. 10/10 από δεκάδες αξιολογήσεις στο doctoranytime. Κλείστε την πρώτη σας συνεδρία.">
 <meta name="keywords" content="ψυχολόγος Καλαμάτα, ψυχοθεραπεύτρια Καλαμάτα, γνωσιακή συμπεριφοριστική ψυχοθεραπεία Καλαμάτα, ψυχολόγος εφήβων Καλαμάτα, κρίσεις πανικού Καλαμάτα, συμβουλευτική γονέων Μεσσηνία, online ψυχολόγος, Εβελίνα Αποστολάκη">
 <meta name="author" content="Εβελίνα Αποστολάκη">
 <meta name="theme-color" content="#E7E2D6">
@@ -280,9 +280,9 @@ header.site.hide{transform:translateY(-100%)}
 @media (max-width:900px){.proof span{font-size:.62rem;letter-spacing:.1em}.proof b{font-size:1.6rem}.proof div{padding:1.4rem .8rem}.proof .wrap{grid-template-columns:1fr 1fr}.proof div:nth-child(3){border-left:0}.proof div{border-top:1px solid var(--line-d)}.proof div:nth-child(-n+2){border-top:0}}
 
 /* ---------- BAND (full-bleed photo) ---------- */
-.band{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:var(--mist);overflow:hidden;padding:8rem 0;isolation:isolate}
+.band{position:relative;min-height:min(100vh,960px);display:grid;place-items:center;text-align:center;color:var(--mist);overflow:hidden;padding:8rem 0;isolation:isolate}
 .band .bg{position:absolute;inset:-12% 0;z-index:-2}
-.band .bg img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.band .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;will-change:transform}
 .band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(28,27,26,.72),rgba(28,27,26,.58) 50%,rgba(28,27,26,.76))}
 .band .wrap{max-width:900px}
 .band h2{font-size:clamp(2.2rem,4.6vw,4rem);color:var(--mist)}
@@ -351,7 +351,9 @@ header.site.hide{transform:translateY(-100%)}
 .step p{font-size:.95rem;color:var(--mute);margin-top:.7rem}
 .appr-visual{position:sticky;top:calc(var(--nav-h) + 2rem)}
 .appr-visual figure{position:relative}
-.appr-visual img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.appr-visual figure{max-width:520px;margin-inline:auto}
+.appr-visual img{width:100%;height:auto}
+.appr-visual .cap{max-width:520px;margin-inline:auto}
 .cap{display:flex;justify-content:space-between;gap:1rem;margin-top:.9rem;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
 @media (max-width:900px){.appr{grid-template-columns:1fr}.appr-visual{position:static}.steps{grid-template-columns:1fr 1fr;gap:0 1.5rem}.step{padding-right:0;border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding-bottom:1.8rem}}
 @media (max-width:560px){.steps{grid-template-columns:1fr}}
@@ -361,8 +363,11 @@ header.site.hide{transform:translateY(-100%)}
 .svc-row{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2.5rem,6vw,6rem);align-items:center;position:relative}
 .svc-row:nth-child(even) .svc-media{order:2}
 .svc-media{position:relative}
-.svc-media figure{position:relative;overflow:hidden;cursor:zoom-in}
-.svc-media img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease-out)}
+.svc-media{display:grid;justify-items:center}
+.svc-frame{width:fit-content;max-width:100%}
+.svc-media figure{position:relative;overflow:hidden;cursor:zoom-in;display:flex;align-items:center;justify-content:center;max-width:100%}
+.svc-media img{max-height:clamp(420px,46vw,640px);height:auto;width:auto;max-width:100%;transition:transform 1.2s var(--ease-out)}
+.svc-media .cap{width:100%}
 @media (hover:hover){.svc-media figure:hover img{transform:scale(1.04)}}
 .svc-media .cap{padding:0 .1rem}
 .svc-text{position:relative;padding:1rem 0}
@@ -376,7 +381,7 @@ header.site.hide{transform:translateY(-100%)}
 .svc-text .more{display:inline-flex;align-items:center;gap:.7rem;margin-top:2rem;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;border-bottom:1px solid var(--ink);padding-bottom:.3rem}
 .svc-text .more svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;transition:transform .4s var(--ease)}
 @media (hover:hover){.svc-text .more:hover svg{transform:translateX(5px)}}
-@media (max-width:900px){.svc-row{grid-template-columns:1fr}.svc-row:nth-child(even) .svc-media{order:0}.svc-text .glyph,.svc-row:nth-child(even) .svc-text .glyph{left:-.2em;right:auto;top:-.5em;font-size:9rem}}
+@media (max-width:900px){.svc-media img{max-height:70vh}.svc-row{grid-template-columns:1fr}.svc-row:nth-child(even) .svc-media{order:0}.svc-text .glyph,.svc-row:nth-child(even) .svc-text .glyph{left:-.2em;right:auto;top:-.5em;font-size:9rem}}
 
 /* ---------- THERAPIES grid ---------- */
 .ther{margin-top:clamp(6rem,10vw,9rem);padding-top:clamp(4rem,7vw,6rem);border-top:1px solid var(--line)}
@@ -412,7 +417,8 @@ header.site.hide{transform:translateY(-100%)}
 .about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(3rem,7vw,7rem);align-items:start}
 .about-visual{position:sticky;top:calc(var(--nav-h) + 2rem)}
 .about-visual figure{overflow:hidden;cursor:zoom-in}
-.about-visual img{aspect-ratio:3/4;object-fit:cover;width:100%;transition:transform 1.2s var(--ease-out)}
+.about-visual figure{max-width:460px}
+.about-visual img{width:100%;height:auto;transition:transform 1.2s var(--ease-out)}
 @media (hover:hover){.about-visual figure:hover img{transform:scale(1.04)}}
 .about-copy .eyebrow{margin-bottom:1.5rem}
 .about-copy p{margin-top:1.3rem}
@@ -660,7 +666,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
 <!-- ============================== PROOF STRIP ============================== -->
 <div class="proof" aria-label="Στοιχεία εμπιστοσύνης">
   <div class="wrap">
-    <div><b>10.0<span class="stars" aria-hidden="true">★★★★★</span></b><span><span class="i-el">17 αξιολογήσεις · doctoranytime</span><span class="i-en">17 reviews · doctoranytime</span></span></div>
+    <div><b>10.0<span class="stars" aria-hidden="true">★★★★★</span></b><span><span class="i-el">Δεκάδες αξιολογήσεις · doctoranytime</span><span class="i-en">Dozens of reviews · doctoranytime</span></span></div>
     <div><b>550275</b><span><span class="i-el">Άδεια ασκήσεως · από το 2017</span><span class="i-en">Licence no. · since 2017</span></span></div>
     <div><b>3</b><span><span class="i-el">Τίτλοι σπουδών · Πτυχίο, MSc, M.Ed.</span><span class="i-en">Degrees · BSc, MSc, M.Ed.</span></span></div>
     <div><b>50<small>′</small></b><span><span class="i-el">Συνεδρίες δια ζώσης &amp; online</span><span class="i-en">In-person &amp; online sessions</span></span></div>
@@ -688,17 +694,17 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
     <div class="sec-head">
       <div class="rule rv"></div>
       <h2 id="h-rev" class="split" data-split><span class="i-el">Αξιολογήσεις</span><span class="i-en">Reviews</span></h2>
-      <p class="rv rv-d1"><span class="i-el">Επιβεβαιωμένες αξιολογήσεις από ανθρώπους που έκαναν συνεδρίες. Και οι 17 βρίσκονται εδώ, όπως γράφτηκαν.</span><span class="i-en">Verified reviews from people who attended sessions. All 17 are here, exactly as they were written.</span></p>
+      <p class="rv rv-d1"><span class="i-el">Δεκάδες επιβεβαιωμένες αξιολογήσεις από ανθρώπους που έκαναν συνεδρίες. Όλες βρίσκονται εδώ, όπως γράφτηκαν.</span><span class="i-en">Dozens of verified reviews from people who attended sessions. All of them are here, exactly as they were written.</span></p>
       <a class="score-line rv rv-d2" href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">
-        <b>10.0</b><span class="stars" aria-hidden="true">★★★★★</span><span><span class="i-el">17 αξιολογήσεις στο </span><span class="i-en">17 reviews on </span><u style="text-decoration:none">doctoranytime</u></span>
+        <b>10.0</b><span class="stars" aria-hidden="true">★★★★★</span><span><span class="i-el">δεκάδες αξιολογήσεις στο </span><span class="i-en">dozens of reviews on </span><u style="text-decoration:none">doctoranytime</u></span>
       </a>
     </div>
 
     <div class="tabs rv" role="tablist" aria-label="Φίλτρο αξιολογήσεων">
-      <button role="tab" aria-selected="true" data-filter="all"><span class="i-el">Όλες</span><span class="i-en">All</span> <b>(17)</b></button>
-      <button role="tab" aria-selected="false" data-filter="pos"><span class="i-el">Θετικές</span><span class="i-en">Positive</span> <b>(17)</b></button>
-      <button role="tab" aria-selected="false" data-filter="neu"><span class="i-el">Ουδέτερες</span><span class="i-en">Neutral</span> <b>(0)</b></button>
-      <button role="tab" aria-selected="false" data-filter="neg"><span class="i-el">Αρνητικές</span><span class="i-en">Negative</span> <b>(0)</b></button>
+      <button role="tab" aria-selected="true" data-filter="all"><span class="i-el">Όλες</span><span class="i-en">All</span></button>
+      <button role="tab" aria-selected="false" data-filter="pos"><span class="i-el">Θετικές</span><span class="i-en">Positive</span></button>
+      <button role="tab" aria-selected="false" data-filter="neu"><span class="i-el">Ουδέτερες</span><span class="i-en">Neutral</span></button>
+      <button role="tab" aria-selected="false" data-filter="neg"><span class="i-el">Αρνητικές</span><span class="i-en">Negative</span></button>
     </div>
 
     <div class="q-wrap rv rv-d1" id="qWrap">
@@ -707,7 +713,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
         <div class="q-empty"><span class="i-el">Καμία ουδέτερη ή αρνητική αξιολόγηση μέχρι σήμερα.</span><span class="i-en">No neutral or negative reviews to date.</span></div>
       </div>
       <div class="q-foot">
-        <div class="q-count" id="qCount"><b>01</b> / 17</div>
+        <div class="q-count" id="qCount"><b>01</b></div>
         <div class="dots" id="qDots" role="tablist" aria-label="Επιλογή αξιολόγησης"></div>
         <div class="q-nav">
           <button type="button" id="qPrev" aria-label="Προηγούμενη αξιολόγηση"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -716,7 +722,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </div>
     </div>
 
-    <!-- source list: all 17 reviews (rendered as a plain list without JS; the carousel is built from it) -->
+    <!-- source list: all the reviews (rendered as a plain list without JS; the carousel is built from it) -->
     <ol class="rv-src" id="rvSrc">
       <li data-score="10.0" data-date-el="7 Σεπτεμβρίου 2026" data-date-en="7 September 2026" data-name="Sofia"><span class="i-el">Νιώθω πολύ τυχερή που βρήκα τη συγκεκριμένη θεραπεύτρια. Με την ηρεμία και την ουσιαστική της υποστήριξη, με βοήθησε να δω τα πράγματα πιο καθαρά και να νιώσω πάλι σιγουριά. Ξεχωρίζει για την ανθρωπιά και τον επαγγελματισμό της — τη συνιστώ από καρδιάς.</span><span class="i-en">I feel very lucky to have found this therapist. With her calm and meaningful support she helped me see things more clearly and feel confident again. She stands out for her humanity and professionalism — I recommend her wholeheartedly.</span></li>
       <li data-score="10.0" data-date-el="7 Σεπτεμβρίου 2026" data-date-en="7 September 2026" data-name="Christina"><span class="i-el">Πολύ καλή και ευγενική, την συνιστώ ανεπιφύλακτα σε όποιον ψάχνει έναν που πραγματικά ενδιαφέρεται και σέβεται.</span><span class="i-en">Very good and kind — I recommend her without reservation to anyone looking for someone who truly cares and respects you.</span></li>
@@ -788,10 +794,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
 
     <div class="svc-rows">
       <article class="svc-row">
-        <div class="svc-media">
-          <figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-polythrona.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Πολυθρόνα με μαξιλάρι μπροστά από ξύλινο παραβάν στο γραφείο ψυχοθεραπείας στην Καλαμάτα"></figure>
-          <div class="cap rv"><span>01</span><span><span class="i-el">Η πολυθρόνα των συνεδριών</span><span class="i-en">The session armchair</span></span></div>
-        </div>
+        <div class="svc-media"><div class="svc-frame"><figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-polythrona.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Πολυθρόνα με μαξιλάρι μπροστά από ξύλινο παραβάν στο γραφείο ψυχοθεραπείας στην Καλαμάτα"></figure>
+          <div class="cap rv"><span>01</span><span><span class="i-el">Η πολυθρόνα των συνεδριών</span><span class="i-en">The session armchair</span></span></div></div></div>
         <div class="svc-text">
           <span class="glyph" aria-hidden="true">Α</span>
           <span class="eyebrow rv"><span class="i-el">Ενήλικες</span><span class="i-en">Adults</span></span>
@@ -803,10 +807,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </article>
 
       <article class="svc-row">
-        <div class="svc-media">
-          <figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-gonia-anamonis.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Γωνιά αναμονής με δύο κάδρα γραμμικής τέχνης και μικρό ξύλινο τραπέζι"></figure>
-          <div class="cap rv"><span>02</span><span><span class="i-el">Η γωνιά αναμονής</span><span class="i-en">The waiting corner</span></span></div>
-        </div>
+        <div class="svc-media"><div class="svc-frame"><figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-gonia-anamonis.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Γωνιά αναμονής με δύο κάδρα γραμμικής τέχνης και μικρό ξύλινο τραπέζι"></figure>
+          <div class="cap rv"><span>02</span><span><span class="i-el">Η γωνιά αναμονής</span><span class="i-en">The waiting corner</span></span></div></div></div>
         <div class="svc-text">
           <span class="glyph" aria-hidden="true">Ε</span>
           <span class="eyebrow rv"><span class="i-el">Έφηβοι</span><span class="i-en">Teenagers</span></span>
@@ -818,10 +820,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </article>
 
       <article class="svc-row">
-        <div class="svc-media">
-          <figure class="rvi zoom" tabindex="0"><img src="assets/epaggelmatikes-kartes-evelina-apostolaki.webp" width="1500" height="1125" loading="lazy" decoding="async" alt="Επαγγελματικές κάρτες της Εβελίνας Αποστολάκη δίπλα σε παχύφυτα, στην υποδοχή του γραφείου"></figure>
-          <div class="cap rv"><span>03</span><span><span class="i-el">Στην υποδοχή</span><span class="i-en">At reception</span></span></div>
-        </div>
+        <div class="svc-media"><div class="svc-frame"><figure class="rvi zoom" tabindex="0"><img src="assets/epaggelmatikes-kartes-evelina-apostolaki.webp" width="1500" height="1125" loading="lazy" decoding="async" alt="Επαγγελματικές κάρτες της Εβελίνας Αποστολάκη δίπλα σε παχύφυτα, στην υποδοχή του γραφείου"></figure>
+          <div class="cap rv"><span>03</span><span><span class="i-el">Στην υποδοχή</span><span class="i-en">At reception</span></span></div></div></div>
         <div class="svc-text">
           <span class="glyph" aria-hidden="true">Γ</span>
           <span class="eyebrow rv"><span class="i-el">Γονείς</span><span class="i-en">Parents</span></span>
@@ -833,10 +833,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </article>
 
       <article class="svc-row">
-        <div class="svc-media">
-          <figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-grafeio-ptychia.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Το γραφείο με τους τίτλους σπουδών στον τοίχο, το laptop και ένα φυτό δίπλα"></figure>
-          <div class="cap rv"><span>04</span><span><span class="i-el">Το γραφείο των online συνεδριών</span><span class="i-en">The desk for online sessions</span></span></div>
-        </div>
+        <div class="svc-media"><div class="svc-frame"><figure class="rvi zoom" tabindex="0"><img src="assets/grafeio-psychologou-kalamata-grafeio-ptychia.webp" width="1125" height="1500" loading="lazy" decoding="async" alt="Το γραφείο με τους τίτλους σπουδών στον τοίχο, το laptop και ένα φυτό δίπλα"></figure>
+          <div class="cap rv"><span>04</span><span><span class="i-el">Το γραφείο των online συνεδριών</span><span class="i-en">The desk for online sessions</span></span></div></div></div>
         <div class="svc-text">
           <span class="glyph" aria-hidden="true">O</span>
           <span class="eyebrow rv"><span class="i-el">Online</span><span class="i-en">Online</span></span>
@@ -882,7 +880,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       <div class="stat rv"><span class="n" data-count="3">3</span><span class="l"><span class="i-el">τίτλοι σπουδών: πτυχίο &amp; δύο μεταπτυχιακά</span><span class="i-en">degrees: BSc and two master's</span></span></div>
       <div class="stat rv rv-d1"><span class="n" data-count="3">3</span><span class="l"><span class="i-el">χρόνια εκπαίδευσης στη ΓΣΘ, σε ενήλικες και παιδιά/εφήβους</span><span class="i-en">years of CBT training, adults and children/adolescents</span></span></div>
       <div class="stat rv rv-d2"><span class="n">2017</span><span class="l"><span class="i-el">έτος απόκτησης άδειας ασκήσεως επαγγέλματος</span><span class="i-en">professional licence granted</span></span></div>
-      <div class="stat rv rv-d3"><span class="n" data-count="17">17</span><span class="l"><span class="i-el">αξιολογήσεις 10/10 στο doctoranytime</span><span class="i-en">10/10 reviews on doctoranytime</span></span></div>
+      <div class="stat rv rv-d3"><span class="n">10.0</span><span class="l"><span class="i-el">μέση βαθμολογία από δεκάδες αξιολογήσεις στο doctoranytime</span><span class="i-en">average rating from dozens of reviews on doctoranytime</span></span></div>
     </div>
 
     <div class="cred-grid">
@@ -898,7 +896,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </ul>
       <div class="rating rv rv-d1">
         <b>10.0</b><span class="stars" aria-hidden="true">★★★★★</span>
-        <p><span class="i-el">Μέση βαθμολογία από 17 επιβεβαιωμένες αξιολογήσεις στο <a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a>.</span><span class="i-en">Average rating from 17 verified reviews on <a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a>.</span></p>
+        <p><span class="i-el">Μέση βαθμολογία από δεκάδες επιβεβαιωμένες αξιολογήσεις στο <a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a>.</span><span class="i-en">Average rating from dozens of verified reviews on <a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a>.</span></p>
         <a class="btn" href="#reviews"><span class="i-el">Διαβάστε τις</span><span class="i-en">Read them</span></a>
       </div>
     </div>
@@ -1380,7 +1378,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       var prev=cur; cur=(i+slides.length)%slides.length;
       slides.forEach(function(s,k){ var on=k===cur; s.classList.toggle('on', on); s.classList.toggle('in', on); s.setAttribute('aria-hidden', String(!on)); });
       dotEls.forEach(function(b,k){ b.classList.toggle('on', k===cur); b.setAttribute('aria-selected', String(k===cur)); });
-      count.innerHTML='<b>'+pad(cur+1)+'</b> / '+pad(slides.length);
+      count.innerHTML='<b>'+pad(cur+1)+'</b>';
       if(prev!==cur){ mark.classList.add('tick'); setTimeout(function(){ mark.classList.remove('tick'); }, 500); }
       setHeight();
       restart();
@@ -1410,7 +1408,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
         t.setAttribute('aria-selected','true'); filter=t.dataset.filter;
         var empty=(filter==='neu'||filter==='neg');
         stage.classList.toggle('empty', empty);
-        if(empty){ clearTimeout(timer); dots.classList.remove('play'); slides.forEach(function(s){ s.classList.remove('on'); s.setAttribute('aria-hidden','true'); }); count.innerHTML='<b>00</b> / 00'; setHeight(); }
+        if(empty){ clearTimeout(timer); dots.classList.remove('play'); slides.forEach(function(s){ s.classList.remove('on'); s.setAttribute('aria-hidden','true'); }); count.innerHTML='<b>—</b>'; setHeight(); }
         else { stage.classList.remove('empty'); go(0); }
       });
     });
