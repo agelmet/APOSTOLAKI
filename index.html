@@ -239,11 +239,11 @@ header.site.hide{transform:translateY(-100%)}
 .hero-visual{position:relative;min-height:100svh}
 .hero-visual .ph{position:absolute;inset:0;overflow:hidden}
 .hero-visual img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;will-change:transform}
-.js .hero-visual img{animation:kb 22s var(--ease) both}
+.js .hero.ready .hero-visual img{animation:kb 22s var(--ease) both}
 @keyframes kb{from{transform:scale(1.08) translateY(1.5%)}to{transform:scale(1) translateY(0)}}
 .hero-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(215,208,193,.18),rgba(38,38,38,0) 30%,rgba(38,38,38,.16))}
 .hero-veil{position:absolute;inset:0;background:var(--paper);transform-origin:left;z-index:2}
-.js .hero-veil{animation:veil 1.1s var(--ease-out) .15s both}
+.js .hero.ready .hero-veil{animation:veil 1.1s var(--ease-out) .1s both}
 @keyframes veil{to{transform:scaleX(0);transform-origin:right}}
 .badge{position:absolute;left:0;top:50%;width:150px;height:150px;transform:translate(-55%,-50%);z-index:3;border-radius:50%;background:var(--ink);color:var(--mist);display:grid;place-items:center}
 .badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
@@ -1204,6 +1204,12 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
     ['.i-el','.i-en'].forEach(function(s){ el.querySelectorAll(s+' .wi').forEach(function(wi,k){ wi.style.setProperty('--i', k); }); });
   }
   if(!reduced) d.querySelectorAll('[data-split]').forEach(splitWords);
+
+  /* ---------------- hero: lift the veil only once the portrait has loaded ---------------- */
+  (function(){ var hero=d.querySelector('.hero'), im=d.querySelector('.hero-visual img'); if(!hero||!im) return;
+    var ok=false; function ready(){ if(ok) return; ok=true; hero.classList.add('ready'); }
+    if(im.complete && im.naturalWidth) ready(); else { im.addEventListener('load', ready); im.addEventListener('error', ready); }
+    setTimeout(ready, 1800); })();
 
   /* ---------------- sticky nav + progress + mobile bar ---------------- */
   var nav=d.getElementById('nav'), prog=d.getElementById('progress'), mbar=d.getElementById('mbar'), lastY=0;
