@@ -173,7 +173,7 @@ header.site.stuck::after{opacity:1}
 header.site.hide{transform:translateY(-100%)}
 .nav-in{width:min(1360px,calc(100% - 3rem));margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1.4rem}
 .brand{display:inline-flex;align-items:center;gap:1.15rem}
-.brand .mark{width:86px;height:63px;display:grid;place-items:center;flex:none;transition:transform .45s var(--ease)}
+.brand .mark{width:64px;height:48px;display:grid;place-items:center;flex:none;transition:transform .45s var(--ease)}
 .brand .mark img,.fbrand .mark img{width:100%;height:100%;object-fit:contain;object-position:center}
 .brand .wm{display:flex;flex-direction:column;line-height:1.15}
 .brand .wm b{font-family:var(--serif);font-weight:300;font-size:1.1rem;letter-spacing:.01em;white-space:nowrap}
@@ -196,7 +196,7 @@ header.site.hide{transform:translateY(-100%)}
 .burger span,.burger span::before,.burger span::after{content:"";position:absolute;left:8px;width:28px;height:1.5px;background:var(--ink);transition:transform .4s var(--ease),width .3s}
 .burger span{top:50%}.burger span::before{left:0;top:-8px}.burger span::after{left:0;top:8px;width:18px}
 @media (max-width:1100px){.nav-links{display:none}.burger{display:block}.nav-cta{display:none}}
-@media (max-width:640px){:root{--nav-h:72px}.brand .wm i{display:none}.brand .mark{width:52px;height:38px;font-size:1.1rem}.brand .wm b{font-size:1.05rem}}
+@media (max-width:640px){:root{--nav-h:72px}.brand .wm i{display:none}.brand .mark{width:40px;height:40px;font-size:1.1rem}.brand .wm b{font-size:1.05rem}}
 @media (max-width:480px){.nav-in{gap:.75rem}.brand{gap:.7rem}.brand .wm b{font-size:.95rem}.nav-right{gap:.5rem}.lang{padding:2px}.lang button{padding:.38rem .5rem;gap:0;font-size:0}.lang button .flag{margin:0}.burger{margin-right:-6px}}
 
 /* mobile drawer */
@@ -254,7 +254,8 @@ header.site.hide{transform:translateY(-100%)}
 .badge{position:absolute;left:0;top:50%;width:168px;height:168px;transform:translate(-55%,-50%);z-index:3;border-radius:50%;background:var(--cream);color:var(--ink);display:grid;place-items:center;box-shadow:0 18px 44px -26px rgba(38,38,38,.5);border:1px solid rgba(38,38,38,.1)}
 .badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
 .badge svg text{font-family:var(--sans);font-size:8.6px;font-weight:500;letter-spacing:.3em;fill:var(--mute);text-transform:uppercase}
-.badge .core{font-family:var(--serif);font-size:1.6rem;line-height:1}
+.badge .core{width:60%;display:grid;place-items:center}
+.badge .core img{width:100%;height:auto}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.badge svg,.js .hero-visual img,.js .hero-veil{animation:none}.js .hero-veil{transform:scaleX(0)}}
 .hero-scroll{position:absolute;left:clamp(1.5rem,6vw,6.5rem);bottom:2.2rem;display:flex;align-items:center;gap:.9rem;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
@@ -267,7 +268,7 @@ header.site.hide{transform:translateY(-100%)}
   .hero-copy{padding:4.6rem 1.5rem 3.5rem}
   .hero h1{max-width:none}
   .badge{left:auto;right:1.2rem;top:auto;bottom:0;transform:translate(0,50%);width:126px;height:126px}
-  .badge svg text{font-size:9.6px}.badge .core{font-size:1.25rem}
+  .badge svg text{font-size:9.6px}
   .hero-scroll{display:none}
   .hero-meta{flex-wrap:wrap;gap:1.2rem 2rem}
 }
@@ -393,8 +394,8 @@ header.site.hide{transform:translateY(-100%)}
 .ther-item{padding:2.4rem 2rem 2.6rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .4s var(--ease)}
 @media (hover:hover){.ther-item:hover{background:rgba(255,255,255,.35)}}
 .ther-item h4{font-size:.74rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:.9rem}
-.ther-item h4::before{content:"";width:22px;height:1px;background:var(--ink);flex:none}
-.ther-item p{font-size:.96rem;color:#3C3A36;margin-top:1.1rem}.ther-item p+p{margin-top:.7rem}
+.ther-item h4::before{content:"";width:22px;height:1px;background:var(--ink)}
+.ther-item p{font-size:.96rem;color:#3C3A36;margin-top:1.1rem}
 .ther-note{text-align:center;max-width:56ch;margin:3rem auto 0;color:var(--mute);font-family:var(--serif);font-style:italic;font-size:1.25rem;line-height:1.5}
 @media (max-width:900px){.ther-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.ther-grid{grid-template-columns:1fr}}
@@ -542,7 +543,7 @@ header.site.hide{transform:translateY(-100%)}
 footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid var(--line)}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem}
 .fbrand{display:inline-flex;align-items:center;gap:1.15rem}
-.fbrand .mark{width:100px;height:73px;display:grid;place-items:center;flex:none;transition:transform .45s var(--ease)}
+.fbrand .mark{width:72px;height:54px;display:grid;place-items:center;flex:none;transition:transform .45s var(--ease)}
 @media (hover:hover){.fbrand:hover .mark{transform:scale(1.05)}}
 .fbrand .wm{display:flex;flex-direction:column;line-height:1.15}
 .fbrand .wm b{font-family:var(--serif);font-weight:300;font-size:1.18rem}
@@ -590,7 +591,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
 <header class="site" id="nav">
   <div class="nav-in">
     <a class="brand" href="#top" aria-label="Εβελίνα Αποστολάκη — αρχή σελίδας">
-      <span class="mark" aria-hidden="true"><img src="assets/logo-emblem-ink.png" width="420" height="307" alt="" decoding="async"></span>
+      <span class="mark" aria-hidden="true"><img src="assets/logo-emblem.png" width="420" height="307" alt="" decoding="async"></span>
       <span class="wm">
         <b><span class="i-el">Εβελίνα Αποστολάκη</span><span class="i-en">Evelina Apostolaki</span></b>
         <i><span class="i-el">Ψυχολόγος · Ψυχοθεραπεύτρια</span><span class="i-en">Psychologist · Psychotherapist</span></i>
@@ -684,7 +685,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
     <div class="badge" aria-hidden="true">
       <svg viewBox="0 0 150 150"><defs><path id="circ" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs>
         <text><textPath href="#circ" class="i-el">Ψυχολόγος · Ψυχοθεραπεύτρια · Καλαμάτα · </textPath><textPath href="#circ" class="i-en">Psychologist · Psychotherapist · Kalamata · </textPath></text></svg>
-      <span class="core">εα</span>
+      <span class="core"><img src="assets/logo-emblem.png" width="420" height="307" alt="Λογότυπο Εβελίνα Αποστολάκη" decoding="async"></span>
     </div>
   </div>
   <div class="hero-scroll" aria-hidden="true"><i></i><span class="i-el">Κύλιση</span><span class="i-en">Scroll</span></div>
@@ -832,8 +833,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
           <p class="rv rv-d1"><span class="i-el">Η ατομική ψυχοθεραπεία αποτελεί έναν ασφαλή και εμπιστευτικό χώρο, όπου μπορούμε να συζητήσουμε για όσα σε δυσκολεύουν και να κατανοήσεις καλύτερα τον εαυτό σου, τις σκέψεις και τα συναισθήματά σου.</span><span class="i-en">Individual psychotherapy is a safe and confidential space where we can talk about what you find difficult, and where you can come to understand yourself, your thoughts and your feelings better.</span></p>
           <div class="svc-more"><div class="svc-more-panel"><div>
           <p><span class="i-el">Μέσα από την θεραπευτική διαδικασία, εξερευνούμε τις δυσκολίες που αντιμετωπίζεις στο παρόν αλλά και τις εμπειρίες και τα μοτίβα του παρελθόντος που μπορεί να επηρεάζουν τον τρόπο με τον οποίο σκέφτεσαι, αισθάνεσαι και σχετίζεσαι σήμερα.</span><span class="i-en">Through the therapeutic process we explore the difficulties you face in the present, as well as the experiences and patterns of the past that may shape how you think, feel and relate today.</span></p>
-          <p><span class="i-el">Η ψυχοθεραπεία μπορεί να αφορά, μεταξύ άλλων, το άγχος και τις κρίσεις πανικού, την θλίψη, την χαμηλή αυτοεκτίμηση, τις δυσκολίες στις σχέσεις, την διαχείριση συναισθημάτων, σημαντικές αλλαγές και μεταβάσεις ζωής, το πένθος και την απώλεια, επαναλαμβανόμενα μοτίβα σκέψης και συμπεριφοράς, καθώς και δυσκολίες που σχετίζονται με την εικόνα του φαγητού και την διατροφή.</span><span class="i-en">Therapy can address, among other things, anxiety and panic attacks, sadness, low self-esteem, difficulties in relationships, managing emotions, significant changes and life transitions, grief and loss, recurring patterns of thought and behaviour, and difficulties connected with the way food is perceived and with eating habits.</span></p>
-          <p><span class="i-el">Στόχος είναι η ανάπτυξη μεγαλύτερης επίγνωσης, η κατανόηση των αναγκών και η καλλιέργεια λειτουργικών τρόπων αντιμετώπισης των δυσκολιών.</span><span class="i-en">The aim is to develop greater awareness, to understand your needs, and to cultivate workable ways of meeting difficulty.</span></p>
+          <p><span class="i-el">Η ψυχοθεραπεία μπορεί να αφορά, μεταξύ άλλων, το άγχος και τις κρίσεις πανικού, την θλίψη, την χαμηλή αυτοεκτίμηση, τις δυσκολίες στις σχέσεις, την διαχείριση συναισθημάτων, σημαντικές αλλαγές και μεταβάσεις ζωής, το πένθος και την απώλεια, επαναλαμβανόμενα μοτίβα σκέψης και συμπεριφοράς, καθώς και δυσκολίες που σχετίζονται με την εικόνα εαυτού και το φαγητό.</span><span class="i-en">Therapy can address, among other things, anxiety and panic attacks, sadness, low self-esteem, difficulties in relationships, managing emotions, significant changes and life transitions, grief and loss, recurring patterns of thought and behaviour, and difficulties connected with self-image and food.</span></p>
+          <p><span class="i-el">Στόχος είναι η ανάπτυξη μεγαλύτερης επίγνωσης, η κατανόηση των αναγκών και η καλλιέργεια πιο λειτουργικών τρόπων αντιμετώπισης των δυσκολιών.</span><span class="i-en">The aim is to develop greater awareness, to understand your needs, and to cultivate more workable ways of meeting difficulty.</span></p>
           </div></div>
           <button type="button" class="svc-more-btn" aria-expanded="false"><span class="lbl-more"><span class="i-el">Διαβάστε περισσότερα</span><span class="i-en">Read more</span></span><span class="lbl-less"><span class="i-el">Λιγότερα</span><span class="i-en">Show less</span></span><span class="chev" aria-hidden="true"></span></button></div>
           <div class="meta rv rv-d2"><span><span class="i-el">Δια ζώσης ή online</span><span class="i-en">In person or online</span></span></div>
@@ -850,7 +851,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
           <p class="rv rv-d1"><span class="i-el">Η εφηβεία αποτελεί μια σημαντική περίοδο αλλαγών, κατά την οποία μπορεί να εμφανιστούν νέες συναισθηματικές και κοινωνικές δυσκολίες.</span><span class="i-en">Adolescence is a significant period of change, during which new emotional and social difficulties can appear.</span></p>
           <div class="svc-more"><div class="svc-more-panel"><div>
           <p><span class="i-el">Η ψυχοθεραπεία προσφέρει έναν ασφαλή και υποστηρικτικό χώρο, όπου ο έφηβος μπορεί να εκφράσει όσα τον απασχολούν, να κατανοήσει καλύτερα τα συναισθήματά του και να αναπτύξει τρόπους αποτελεσματικότερης διαχείρισης των προκλήσεων που αντιμετωπίζει.</span><span class="i-en">Therapy offers a safe and supportive space where a young person can express what is on their mind, understand their feelings better, and develop more effective ways of handling the challenges they face.</span></p>
-          <p><span class="i-el">Μπορεί να αφορά δυσκολίες όπως άγχος, θλίψη, χαμηλή αυτοεκτίμηση και αυτοπεποίθηση, σχολική πίεση, δυσκολίες στις σχέσεις με συνομηλίκους ή την οικογένεια, αλλαγές στην διάθεση, δυσκολίες προσαρμογής, καθώς και ζητήματα που σχετίζονται με την εικόνα του σώματος και την διατροφή.</span><span class="i-en">It can address difficulties such as anxiety, sadness, low self-esteem and confidence, school pressure, difficulties with peers or family, changes in mood, difficulties adjusting, and issues connected with body image and eating habits.</span></p>
+          <p><span class="i-el">Μπορεί να αφορά δυσκολίες όπως άγχος, θλίψη, χαμηλή αυτοεκτίμηση και αυτοπεποίθηση, σχολική πίεση, δυσκολίες στις σχέσεις με συνομηλίκους ή την οικογένεια, αλλαγές στην διάθεση, δυσκολίες προσαρμογής, καθώς και ζητήματα που σχετίζονται με την εικόνα του σώματος και το φαγητό.</span><span class="i-en">It can address difficulties such as anxiety, sadness, low self-esteem and confidence, school pressure, difficulties with peers or family, changes in mood, difficulties adjusting, and issues connected with body image and food.</span></p>
           <p><span class="i-el">Η συνεργασία με την οικογένεια, όπου κρίνεται απαραίτητο, αποτελεί σημαντικό μέρος της θεραπευτικής διαδικασίας.</span><span class="i-en">Working with the family, where this is needed, is an important part of the therapeutic process.</span></p>
           </div></div>
           <button type="button" class="svc-more-btn" aria-expanded="false"><span class="lbl-more"><span class="i-el">Διαβάστε περισσότερα</span><span class="i-en">Read more</span></span><span class="lbl-less"><span class="i-el">Λιγότερα</span><span class="i-en">Show less</span></span><span class="chev" aria-hidden="true"></span></button></div>
@@ -902,13 +903,13 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       </div>
       <div class="ther-grid">
         <div class="ther-item rv"><h4><span class="i-el">Άγχος, φοβίες &amp; κρίσεις πανικού</span><span class="i-en">Anxiety, phobias &amp; panic</span></h4><p><span class="i-el">Το άγχος είναι η αντίδραση του οργανισμού σε κάτι που εκλαμβάνεται ως απειλή. Όταν γίνεται επίμονο ή δυσανάλογο, εμφανίζεται ως διαρκής ανησυχία, αποφυγή, ένταση στο σώμα ή ως κρίσεις πανικού — έντονα επεισόδια φόβου με σωματικά συμπτώματα.</span><span class="i-en">Anxiety is the body's response to something perceived as a threat. When it becomes persistent or out of proportion it shows up as constant worry, avoidance, tension in the body, or as panic attacks — intense episodes of fear with physical symptoms.</span></p></div>
-        <div class="ther-item rv rv-d1"><h4><span class="i-el">Κατάθλιψη &amp; διάθεση</span><span class="i-en">Depression &amp; mood</span></h4><p><span class="i-el">Η κατάθλιψη είναι μια επίμονη πτώση της διάθεσης, με απώλεια ενδιαφέροντος και ευχαρίστησης, κόπωση, διαταραχές ύπνου και όρεξης και αρνητικές σκέψεις για τον εαυτό, τους άλλους και το μέλλον.</span><span class="i-en">Depression is a persistent drop in mood, with loss of interest and pleasure, fatigue, disturbed sleep and appetite, and negative thoughts about oneself, others and the future.</span></p></div>
+        <div class="ther-item rv rv-d1"><h4><span class="i-el">Κατάθλιψη &amp; διάθεση</span><span class="i-en">Depression &amp; mood</span></h4><p><span class="i-el">Η κατάθλιψη δεν είναι περαστική στενοχώρια. Είναι μια επίμονη πτώση της διάθεσης, με απώλεια ενδιαφέροντος και ευχαρίστησης, κόπωση, διαταραχές ύπνου και όρεξης και αρνητικές σκέψεις για τον εαυτό, τους άλλους και το μέλλον.</span><span class="i-en">Depression is not passing sadness. It is a persistent drop in mood, with loss of interest and pleasure, fatigue, disturbed sleep and appetite, and negative thoughts about oneself, others and the future.</span></p></div>
         <div class="ther-item rv rv-d2"><h4><span class="i-el">Πένθος, θλίψη &amp; τραύμα</span><span class="i-en">Grief, sadness &amp; trauma</span></h4><p><span class="i-el">Το πένθος είναι η φυσιολογική διεργασία μετά από μια απώλεια. Το τραύμα είναι το αποτύπωμα μιας συντριπτικής εμπειρίας που συνεχίζει να επηρεάζει το παρόν — μέσα από αναβιώσεις, αποφυγή και διαρκή επιφυλακή.</span><span class="i-en">Grief is the natural process that follows a loss. Trauma is the imprint of an overwhelming experience that keeps affecting the present — through re-experiencing, avoidance and constant alertness.</span></p></div>
-        <div class="ther-item rv"><h4><span class="i-el">Αυτοεκτίμηση &amp; σχέσεις</span><span class="i-en">Self-esteem &amp; relationships</span></h4><p><span class="i-el">Η αυτοεκτίμηση είναι η αξία που αποδίδουμε στον εαυτό μας. Η χαμηλή αυτοεκτίμηση τροφοδοτεί την αυστηρή αυτοκριτική, την ανάγκη για επιβεβαίωση και την δυσκολία στα όρια — και αυτά επαναλαμβάνονται στις σχέσεις μας.</span><span class="i-en">Self-esteem is the value we place on ourselves. Low self-esteem feeds harsh self-criticism, a need for reassurance and difficulty with boundaries — and those patterns repeat in our relationships.</span></p></div>
-        <div class="ther-item rv rv-d1"><h4><span class="i-el">Χρόνιος πόνος &amp; ψυχοσωματικά</span><span class="i-en">Chronic pain &amp; psychosomatic</span></h4><p><span class="i-el">Ψυχοσωματικά ονομάζονται τα σωματικά συμπτώματα που επηρεάζονται από την ψυχική κατάσταση: πονοκέφαλοι, γαστρεντερικές ενοχλήσεις, ταχυκαρδία, μυϊκή ένταση.</span><span class="i-en">Psychosomatic symptoms are physical symptoms shaped by one's psychological state: headaches, digestive discomfort, palpitations, muscle tension.</span></p><p><span class="i-el">Ο χρόνιος πόνος με την σειρά του επιβαρύνει την διάθεση και τον ύπνο.</span><span class="i-en">Chronic pain in turn weighs on mood and sleep.</span></p></div>
-        <div class="ther-item rv rv-d2"><h4><span class="i-el">Σχολική Ψυχολογία &amp; Συμβουλευτική Γονέων</span><span class="i-en">School Psychology &amp; Parent Counselling</span></h4><p><span class="i-el">Η σχολική ψυχολογία αφορά την ψυχική υγεία και την μάθηση μέσα στο σχολικό πλαίσιο: μαθησιακές δυσκολίες, άγχος επίδοσης, προσαρμογή σε νέο σχολείο, σχέσεις με συνομηλίκους και γονείς καθώς και συνεργασία σχολείου – οικογένειας.</span><span class="i-en">School psychology concerns mental health and learning within the school setting: learning difficulties, performance anxiety, adjusting to a new school, relationships with peers and parents, as well as school–family collaboration.</span></p></div>
+        <div class="ther-item rv"><h4><span class="i-el">Αυτοεκτίμηση &amp; σχέσεις</span><span class="i-en">Self-esteem &amp; relationships</span></h4><p><span class="i-el">Η αυτοεκτίμηση είναι η αξία που αποδίδουμε στον εαυτό μας. Όταν είναι χαμηλή, τροφοδοτεί την αυστηρή αυτοκριτική, την ανάγκη για επιβεβαίωση και την δυσκολία στα όρια — και αυτά επαναλαμβάνονται στις σχέσεις μας.</span><span class="i-en">Self-esteem is the value we place on ourselves. When it is low it feeds harsh self-criticism, a need for reassurance and difficulty with boundaries — and those patterns repeat in our relationships.</span></p></div>
+        <div class="ther-item rv rv-d1"><h4><span class="i-el">Χρόνιος πόνος &amp; ψυχοσωματικά</span><span class="i-en">Chronic pain &amp; psychosomatic</span></h4><p><span class="i-el">Ψυχοσωματικά ονομάζονται τα σωματικά συμπτώματα που επηρεάζονται από την ψυχική κατάσταση: πονοκέφαλοι, γαστρεντερικές ενοχλήσεις, ταχυκαρδία, μυϊκή ένταση. Ο χρόνιος πόνος με την σειρά του επιβαρύνει την διάθεση και τον ύπνο.</span><span class="i-en">Psychosomatic symptoms are physical symptoms shaped by one's psychological state: headaches, digestive discomfort, palpitations, muscle tension. Chronic pain in turn weighs on mood and sleep.</span></p></div>
+        <div class="ther-item rv rv-d2"><h4><span class="i-el">Σχολική ψυχολογία</span><span class="i-en">School psychology</span></h4><p><span class="i-el">Η σχολική ψυχολογία αφορά την ψυχική υγεία και την μάθηση μέσα στο σχολικό πλαίσιο: μαθησιακές δυσκολίες, άγχος επίδοσης, προσαρμογή σε νέο σχολείο, σχέσεις με συνομηλίκους και συνεργασία σχολείου–οικογένειας.</span><span class="i-en">School psychology concerns mental health and learning within the school setting: learning difficulties, performance anxiety, adjusting to a new school, peer relationships and school–family collaboration.</span></p></div>
       </div>
-      <p class="ther-note rv"><span class="i-el">Δεν εμπίπτει το αίτημά σας σε κάποια από τις παραπάνω κατηγορίες; Γράψτε μου τι σας απασχολεί και θα το βρούμε μαζί στην πρώτη συνάντηση.</span><span class="i-en">Does your concern fall outside the categories above? Tell me what is on your mind and we will work it out together at the first meeting.</span></p>
+      <p class="ther-note rv"><span class="i-el">Δεν είστε σίγουροι ποια υπηρεσία σας ταιριάζει; Δεν χρειάζεται να ξέρετε. Γράψτε μου τι σας απασχολεί και θα το βρούμε μαζί στην πρώτη συνάντηση.</span><span class="i-en">Not sure which service fits? You do not need to know. Tell me what is on your mind and we will work it out together at the first meeting.</span></p>
     </div>
   </div>
 </section>
@@ -919,7 +920,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow c rv"><span class="i-el">Σπουδές &amp; εκπαίδευση</span><span class="i-en">Credentials</span></span>
-      <h2 id="h-cred" class="split" data-split><span class="i-el">Γιατί να εμπιστευθείτε την διαδικασία της ψυχοθεραπείας;</span><span class="i-en">Why trust the process of psychotherapy?</span></h2>
+      <h2 id="h-cred" class="split" data-split><span class="i-el">Γιατί να εμπιστευτείτε αυτή την δουλειά</span><span class="i-en">Why you can trust this work</span></h2>
       <p class="rv rv-d1"><span class="i-el">Η ψυχοθεραπεία δεν είναι συζήτηση με έναν καλό ακροατή. Είναι κλινική δουλειά που απαιτεί εκπαίδευση, εποπτεία και συνεχή ενημέρωση.</span><span class="i-en">Psychotherapy is not a conversation with a good listener. It is clinical work that requires training, supervision and continuous professional development.</span></p>
     </div>
 
@@ -927,7 +928,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       <div class="stat rv"><span class="n" data-count="3">3</span><span class="l"><span class="i-el">τίτλοι σπουδών: πτυχίο &amp; δύο μεταπτυχιακά</span><span class="i-en">degrees: BSc and two master's</span></span></div>
       <div class="stat rv rv-d1"><span class="n" data-count="4">4</span><span class="l"><span class="i-el">χρόνια εκπαίδευσης στην Γνωσιακή Συμπεριφορική Θεραπεία, σε ενήλικες και παιδιά/εφήβους</span><span class="i-en">years of Cognitive Behavioural Therapy training, adults and children/adolescents</span></span></div>
       <div class="stat rv rv-d2"><span class="n">2017</span><span class="l"><span class="i-el">έτος απόκτησης άδειας ασκήσεως επαγγέλματος</span><span class="i-en">professional licence granted</span></span></div>
-      <div class="stat rv rv-d3"><span class="n">5.0</span><span class="l"><span class="i-el">μέση βαθμολογία από δεκάδες αξιολογήσεις στο Google</span><span class="i-en">average rating from dozens of reviews on Google</span></span></div>
+      <div class="stat rv rv-d3"><span class="n">10.0</span><span class="l"><span class="i-el">μέση βαθμολογία από δεκάδες αξιολογήσεις στο doctoranytime</span><span class="i-en">average rating from dozens of reviews on doctoranytime</span></span></div>
     </div>
 
     <div class="cred-grid">
@@ -982,8 +983,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
           <span class="i-en">I am Evelina Apostolaki, a psychologist and psychotherapist. I keep a private practice in Kalamata and I am a graduate of the Department of Psychology at the University of Crete. I also hold master's degrees in Educational Psychology from Neapolis University Pafos and in Special Education from the University of Nicosia, in collaboration with the University of Patras.</span>
         </p>
         <p class="rv rv-d2">
-          <span class="i-el">Έχω εκπαιδευτεί στην Γνωσιακή Συμπεριφορική Θεραπεία ενηλίκων αλλά και παιδιών και εφήβων στο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής. Το παρόν διάστημα εκπαιδεύομαι στην Ανώτερη Πρακτική στην Γνωσιακή - Συμπεριφορική Θεραπεία στον ίδιο φορέα.</span>
-          <span class="i-en">I trained in Cognitive Behavioural Therapy for adults as well as for children and adolescents at the Centre for Applied Psychotherapy and Counselling. I am currently training in Advanced Practice in Cognitive Behavioural Therapy at the same institution.</span>
+          <span class="i-el">Έχω εκπαιδευτεί στην Γνωσιακή Συμπεριφορική Θεραπεία ενηλίκων αλλά και παιδιών και εφήβων στο Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής, όπου το παρόν διάστημα εκπαιδεύομαι στην Ανώτερη Πρακτική στην Γνωσιακή Συμπεριφορική Θεραπεία.</span>
+          <span class="i-en">I trained in Cognitive Behavioural Therapy for adults as well as for children and adolescents at the Centre for Applied Psychotherapy and Counselling, where I am currently training in Advanced Practice in Cognitive Behavioural Therapy.</span>
         </p>
         <p class="rv rv-d2">
           <span class="i-el">Μέχρι και σήμερα είμαι συνεργάτιδα σε ιδιωτικό γραφείο και παράλληλα εργάζομαι στο Υπουργείο Παιδείας ως ψυχολόγος. Ακόμη, σχεδιάζω και υλοποιώ βιωματικά workshops με επίκεντρο την ψυχοεκπαίδευση, το άγχος και την αποτελεσματική διαχείρισή του, ενώ είμαι επιμορφώτρια στο πρόγραμμα «Εγγραμματισμός στην Ψυχική Υγεία Παιδιών και Εφήβων».</span>
@@ -1007,22 +1008,20 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
           <div class="cv-panel"><div>
             <div class="cv-block">
               <h4><span class="i-el">Σπουδές</span><span class="i-en">Education and training</span></h4>
-              <div class="cv-row"><span class="yr"><span class="i-el">2026 – σήμερα</span><span class="i-en">2026 – present</span></span><span><span class="i-el">Μετεκπαίδευση στην Ανώτερη Πρακτική στην Γνωσιακή Συμπεριφορική Θεραπεία, Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής (ΚΕΨΥΣΥ), Αθήνα.</span><span class="i-en">Postgraduate training in Advanced Practice in Cognitive Behavioural Therapy, Centre for Applied Psychotherapy and Counselling (KEPSYSY), Athens.</span></span></div>
-              <div class="cv-row"><span class="yr">2026</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Εγγραμματισμός στην Ψυχική Υγεία Παιδιών και Εφήβων», Child Mind Institute, με την αποκλειστική υποστήριξη του Ιδρύματος Σταύρος Νιάρχος.</span><span class="i-en">Further-training programme “Mental Health Literacy for Children and Adolescents”, Child Mind Institute, with the exclusive support of the Stavros Niarchos Foundation.</span></span></div>
-              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Διαχείριση της απώλειας και της σοβαρής ασθένειας», Μέριμνα.</span><span class="i-en">Further-training programme “Managing loss and serious illness”, Merimna.</span></span></div>
-              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Το σπίτι των παιδιών», Κέντρο Πρόληψης των Εξαρτήσεων και Προαγωγής της Ψυχοκοινωνικής Υγείας Π.Ε. Αρκαδίας και Κέντρο Διεπιστημονικής Αξιολόγησης, Συμβουλευτικής και Υποστήριξης Αρκαδίας.</span><span class="i-en">Further-training programme “The children’s house”, Arcadia Addiction Prevention and Psychosocial Health Centre and the Arcadia Interdisciplinary Assessment, Counselling and Support Centre.</span></span></div>
-              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Πρόληψη και αντιμετώπιση περιστατικών Ενδοσχολικής Βίας και Εκφοβισμού», Ινστιτούτο Εκπαιδευτικής Πολιτικής και Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών.</span><span class="i-en">Further-training programme “Preventing and addressing school violence and bullying”, Institute of Educational Policy and the National and Kapodistrian University of Athens.</span></span></div>
-              <div class="cv-row"><span class="yr">2024 – 2025</span><span><span class="i-el">Μετεκπαίδευση στην Γνωσιακή Συμπεριφορική Θεραπεία Παιδιών και Εφήβων, Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής (ΚΕΨΥΣΥ), Αθήνα.</span><span class="i-en">Postgraduate training in Cognitive Behavioural Therapy for Children and Adolescents, Centre for Applied Psychotherapy and Counselling (KEPSYSY), Athens.</span></span></div>
-              <div class="cv-row"><span class="yr">2020 – 2022</span><span><span class="i-el">Μεταπτυχιακό «Εκπαιδευτική Ψυχολογία», Πανεπιστήμιο Νεάπολις Πάφου.</span><span class="i-en">M.Ed. Educational Psychology, Neapolis University Pafos.</span></span></div>
-              <div class="cv-row"><span class="yr">2020 – 2022</span><span><span class="i-el">Μετεκπαίδευση στην Γνωσιακή Συμπεριφορική Θεραπεία Ενηλίκων, Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής (ΚΕΨΥΣΥ), Αθήνα.</span><span class="i-en">Postgraduate training in Cognitive Behavioural Therapy for Adults, Centre for Applied Psychotherapy and Counselling (KEPSYSY), Athens.</span></span></div>
+              <div class="cv-row"><span class="yr">2013 – 2017</span><span><span class="i-el">Πτυχίο Ψυχολογίας, Τμήμα Ψυχολογίας, Πανεπιστήμιο Κρήτης.</span><span class="i-en">BSc Psychology, Department of Psychology, University of Crete.</span></span></div>
+              <div class="cv-row"><span class="yr">2018 – 2020</span><span><span class="i-el">Μεταπτυχιακό «Ειδική Αγωγή και Εκπαίδευση», Τμήμα Παιδαγωγικών Σπουδών, Πανεπιστήμιο Λευκωσίας σε συνεργασία με το Πανεπιστήμιο Πατρών.</span><span class="i-en">MSc Special Education, Department of Education, University of Nicosia in collaboration with the University of Patras.</span></span></div>
+              <div class="cv-row"><span class="yr">2019</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Παιδοψυχολογία», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">Further-training programme “Child Psychology”, University of the Aegean.</span></span></div>
               <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Διαπολιτισμική Εκπαίδευση», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">Further-training programme “Intercultural Education”, University of the Aegean.</span></span></div>
               <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Εισαγωγή στην Σχολική Ψυχολογία», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">Further-training programme “Introduction to School Psychology”, University of the Aegean.</span></span></div>
               <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Εισαγωγή στην Ειδική Αγωγή», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">Further-training programme “Introduction to Special Education”, University of the Aegean.</span></span></div>
               <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Ετήσιο επιμορφωτικό πρόγραμμα «Γνωσιακή–Συμπεριφορική Θεραπεία», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">One-year further-training programme “Cognitive Behavioural Therapy”, University of the Aegean.</span></span></div>
               <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Εκπαίδευση Εκπαιδευτών Ενηλίκων», Ινστιτούτο Τεχνολογιών Πληροφορικής και Επικοινωνιών του ΕΚΕΤΑ με το Κέντρο Διά Βίου Μάθησης GoLearn.</span><span class="i-en">Further-training programme “Training of Adult Trainers”, Information Technologies Institute (CERTH) with the GoLearn lifelong-learning centre.</span></span></div>
-              <div class="cv-row"><span class="yr">2019</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Παιδοψυχολογία», Πανεπιστήμιο Αιγαίου.</span><span class="i-en">Further-training programme “Child Psychology”, University of the Aegean.</span></span></div>
-              <div class="cv-row"><span class="yr">2018 – 2020</span><span><span class="i-el">Μεταπτυχιακό «Ειδική Αγωγή και Εκπαίδευση», Τμήμα Παιδαγωγικών Σπουδών, Πανεπιστήμιο Λευκωσίας σε συνεργασία με το Πανεπιστήμιο Πατρών.</span><span class="i-en">MSc Special Education, Department of Education, University of Nicosia in collaboration with the University of Patras.</span></span></div>
-              <div class="cv-row"><span class="yr">2013 – 2017</span><span><span class="i-el">Πτυχίο Ψυχολογίας, Τμήμα Ψυχολογίας, Πανεπιστήμιο Κρήτης.</span><span class="i-en">BSc Psychology, Department of Psychology, University of Crete.</span></span></div>
+              <div class="cv-row"><span class="yr">2020 – 2022</span><span><span class="i-el">Μεταπτυχιακό «Εκπαιδευτική Ψυχολογία», Πανεπιστήμιο Νεάπολις Πάφου.</span><span class="i-en">M.Ed. Educational Psychology, Neapolis University Pafos.</span></span></div>
+              <div class="cv-row"><span class="yr">2020 – 2026</span><span><span class="i-el">Τετραετής εκπαίδευση στην Γνωσιακή Συμπεριφορική Θεραπεία ενηλίκων, παιδιών και εφήβων, Κέντρο Εφαρμοσμένης Ψυχοθεραπείας και Συμβουλευτικής, Αθήνα.</span><span class="i-en">Four-year training in Cognitive Behavioural Therapy for adults, children and adolescents, Centre for Applied Psychotherapy and Counselling, Athens.</span></span></div>
+              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Διαχείριση της απώλειας και της σοβαρής ασθένειας», Μέριμνα.</span><span class="i-en">Further-training programme “Managing loss and serious illness”, Merimna.</span></span></div>
+              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Το σπίτι των παιδιών», Κέντρο Πρόληψης των Εξαρτήσεων και Προαγωγής της Ψυχοκοινωνικής Υγείας Π.Ε. Αρκαδίας και Κέντρο Διεπιστημονικής Αξιολόγησης, Συμβουλευτικής και Υποστήριξης Αρκαδίας.</span><span class="i-en">Further-training programme “The children’s house”, Arcadia Addiction Prevention and Psychosocial Health Centre and the Arcadia Interdisciplinary Assessment, Counselling and Support Centre.</span></span></div>
+              <div class="cv-row"><span class="yr">2025</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Πρόληψη και αντιμετώπιση περιστατικών Ενδοσχολικής Βίας και Εκφοβισμού», Ινστιτούτο Εκπαιδευτικής Πολιτικής και Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών.</span><span class="i-en">Further-training programme “Preventing and addressing school violence and bullying”, Institute of Educational Policy and the National and Kapodistrian University of Athens.</span></span></div>
+              <div class="cv-row"><span class="yr">2026</span><span><span class="i-el">Επιμορφωτικό πρόγραμμα «Εγγραμματισμός στην Ψυχική Υγεία Παιδιών και Εφήβων», Child Mind Institute, με την αποκλειστική υποστήριξη του Ιδρύματος Σταύρος Νιάρχος.</span><span class="i-en">Further-training programme “Mental Health Literacy for Children and Adolescents”, Child Mind Institute, with the exclusive support of the Stavros Niarchos Foundation.</span></span></div>
             </div>
             <div class="cv-block">
               <h4><span class="i-el">Επαγγελματική εμπειρία</span><span class="i-en">Professional experience</span></h4>
@@ -1031,8 +1030,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
               <div class="cv-row"><span class="yr"><span class="i-el">2024 – σήμερα</span><span class="i-en">2024 – present</span></span><span><span class="i-el">Ψυχολόγος – Ψυχοθεραπεύτρια, συνεργάτιδα σε ιδιωτικό γραφείο, Ελλάδα.</span><span class="i-en">Psychologist – Psychotherapist, associate in a private practice, Greece.</span></span></div>
               <div class="cv-row"><span class="yr">2023 – 2024</span><span><span class="i-el">Καθηγήτρια Ψυχολογίας σε προπτυχιακούς φοιτητές ψυχολογίας και εργοθεραπείας, Aegean College.</span><span class="i-en">Lecturer in Psychology to undergraduate psychology and occupational therapy students, Aegean College.</span></span></div>
               <div class="cv-row"><span class="yr"><span class="i-el">2020 – σήμερα</span><span class="i-en">2020 – present</span></span><span><span class="i-el">Ψυχολόγος, Υπουργείο Παιδείας, Ελλάδα.</span><span class="i-en">Psychologist, Ministry of Education, Greece.</span></span></div>
-              <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Πρακτική άσκηση – Ψυχολόγος, Ειδικό Δημοτικό Σχολείο Έδεσσας και ΕΕΕΕΚ Έδεσσας.</span><span class="i-en">Placement – Psychologist, Edessa Special Primary School and Edessa vocational special school.</span></span></div>
               <div class="cv-row"><span class="yr">2018 – 2020</span><span><span class="i-el">Ψυχολόγος, Κέντρο Ειδικών Θεραπειών, Ελλάδα.</span><span class="i-en">Psychologist, Centre for Specialised Therapies, Greece.</span></span></div>
+              <div class="cv-row"><span class="yr">2020</span><span><span class="i-el">Πρακτική άσκηση – Ψυχολόγος, Ειδικό Δημοτικό Σχολείο Έδεσσας και ΕΕΕΕΚ Έδεσσας.</span><span class="i-en">Placement – Psychologist, Edessa Special Primary School and Edessa vocational special school.</span></span></div>
               <div class="cv-row"><span class="yr">2017</span><span><span class="i-el">Πρακτική άσκηση – Ψυχολόγος, ΚΕΔΑΣΥ Ρεθύμνου.</span><span class="i-en">Placement – Psychologist, Rethymno diagnostic and support centre.</span></span></div>
             </div>
             <div class="cv-block">
@@ -1108,9 +1107,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
         <div class="ct-list">
           <div class="row rv"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 7 8.4 6 8.4-6" stroke-linejoin="round"/></svg><div><span class="k">Email</span><a href="mailto:apostolakipsych@gmail.com">apostolakipsych@gmail.com</a></div></div>
           <div class="row rv rv-d1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><div><span class="k"><span class="i-el">Γραφείο</span><span class="i-en">Practice</span></span><a href="https://maps.google.com/?q=Chrysanthou+Pagoni+5,+Kalamata" target="_blank" rel="noopener"><span class="i-el">Χρυσάνθου Παγώνη 5, Καλαμάτα 241 00</span><span class="i-en">Chrysanthou Pagoni 5, Kalamata 241 00</span></a></div></div>
-          <div class="row rv rv-d2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.6 3.5h3.1l1.6 4.1-2.1 1.5a11.6 11.6 0 0 0 6.7 6.7l1.5-2.1 4.1 1.6v3.1a2 2 0 0 1-2.1 2A16.6 16.6 0 0 1 3.6 5.6a2 2 0 0 1 2-2.1Z" stroke-linejoin="round"/></svg><div><span class="k"><span class="i-el">Τηλέφωνο</span><span class="i-en">Phone</span></span><a href="tel:+306984859295">698 485 9295</a></div></div>
-          <div class="row rv rv-d3"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg><div><span class="k"><span class="i-el">Συνεδρίες</span><span class="i-en">Sessions</span></span><span><span class="i-el">Κατόπιν ραντεβού · δια ζώσης ή online</span><span class="i-en">By appointment · in person or online</span></span></div></div>
-          <div class="row rv rv-d4"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke-linecap="round"/></svg><div><span class="k"><span class="i-el">Online κράτηση</span><span class="i-en">Online booking</span></span><a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a></div></div>
+          <div class="row rv rv-d2"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg><div><span class="k"><span class="i-el">Συνεδρίες</span><span class="i-en">Sessions</span></span><span><span class="i-el">Κατόπιν ραντεβού · δια ζώσης ή online</span><span class="i-en">By appointment · in person or online</span></span></div></div>
+          <div class="row rv rv-d3"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke-linecap="round"/></svg><div><span class="k"><span class="i-el">Online κράτηση</span><span class="i-en">Online booking</span></span><a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a></div></div>
         </div>
 
         <div class="map rv" id="map" data-src="https://www.google.com/maps?q=%CE%A7%CF%81%CF%85%CF%83%CE%AC%CE%BD%CE%B8%CE%BF%CF%85+%CE%A0%CE%B1%CE%B3%CF%8E%CE%BD%CE%B7+5,+%CE%9A%CE%B1%CE%BB%CE%B1%CE%BC%CE%AC%CF%84%CE%B1&hl=el&z=16&output=embed">
@@ -1165,7 +1163,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
     <div class="fgrid">
       <div>
         <a class="fbrand" href="#top" aria-label="Επιστροφή στην αρχή">
-          <span class="mark" aria-hidden="true"><img src="assets/logo-emblem-ink.png" width="420" height="307" alt="" decoding="async" loading="lazy"></span>
+          <span class="mark" aria-hidden="true"><img src="assets/logo-emblem.png" width="420" height="307" alt="" decoding="async" loading="lazy"></span>
           <span class="wm"><b><span class="i-el">Εβελίνα Αποστολάκη</span><span class="i-en">Evelina Apostolaki</span></b><i><span class="i-el">Ψυχολόγος · Ψυχοθεραπεύτρια</span><span class="i-en">Psychologist · Psychotherapist</span></i></span>
         </a>
         <p class="fnote-b"><span class="i-el">Γνωσιακή-συμπεριφορική ψυχοθεραπεία ενηλίκων και εφήβων, στην Καλαμάτα και online.<br>Άδεια ασκήσεως επαγγέλματος 550275.</span><span class="i-en">Cognitive behavioural psychotherapy for adults and teenagers, in Kalamata and online.<br>Professional licence 550275.</span></p>
@@ -1183,9 +1181,8 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
       <div class="fcol">
         <h4><span class="i-el">Επικοινωνία</span><span class="i-en">Contact</span></h4>
         <ul>
-          <li><a href="https://maps.google.com/?q=Chrysanthou+Pagoni+5,+Kalamata" target="_blank" rel="noopener"><span class="i-el">Χρυσάνθου Παγώνη 5, Καλαμάτα</span><span class="i-en">Chrysanthou Pagoni 5, Kalamata</span></a></li>
-          <li><a href="tel:+306984859295">698 485 9295</a></li>
           <li><a href="mailto:apostolakipsych@gmail.com">apostolakipsych@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=Chrysanthou+Pagoni+5,+Kalamata" target="_blank" rel="noopener"><span class="i-el">Χρυσάνθου Παγώνη 5, Καλαμάτα</span><span class="i-en">Chrysanthou Pagoni 5, Kalamata</span></a></li>
           <li><a href="https://www.doctoranytime.gr/d/Psychologos/apostolaki-evelina" target="_blank" rel="noopener">doctoranytime</a></li>
         </ul>
       </div>
@@ -1199,7 +1196,7 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
 
 <!-- mobile bottom bar -->
 <nav class="mbar" id="mbar" aria-label="Γρήγορες ενέργειες">
-  <a href="tel:+306984859295"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.6 3.5h3.1l1.6 4.1-2.1 1.5a11.6 11.6 0 0 0 6.7 6.7l1.5-2.1 4.1 1.6v3.1a2 2 0 0 1-2.1 2A16.6 16.6 0 0 1 3.6 5.6a2 2 0 0 1 2-2.1Z" stroke-linejoin="round"/></svg><span class="i-el">Κλήση</span><span class="i-en">Call</span></a>
+  <a href="mailto:apostolakipsych@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 7 8.4 6 8.4-6" stroke-linejoin="round"/></svg>Email</a>
   <a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke-linecap="round"/></svg><span class="i-el">Ραντεβού</span><span class="i-en">Book</span></a>
   <a href="https://www.google.com/maps/dir/?api=1&destination=Chrysanthou+Pagoni+5,+Kalamata" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span class="i-el">Οδηγίες</span><span class="i-en">Directions</span></a>
 </nav>
@@ -1220,7 +1217,6 @@ footer.site{background:var(--sand);padding:5rem 0 2.2rem;border-top:1px solid va
   "name":"Εβελίνα Αποστολάκη — Ψυχολόγος, Ψυχοθεραπεύτρια",
   "description":"Γνωσιακή-συμπεριφορική ψυχοθεραπεία ενηλίκων και εφήβων στην Καλαμάτα και online.",
   "email":"apostolakipsych@gmail.com",
-  "telephone":"+306984859295",
   "image":"assets/evelina-apostolaki-psychologos-kalamata.jpg",
   "address":{"@type":"PostalAddress","streetAddress":"Χρυσάνθου Παγώνη 5","addressLocality":"Καλαμάτα","addressRegion":"Μεσσηνία","postalCode":"24100","addressCountry":"GR"},
   "areaServed":["Καλαμάτα","Μεσσηνία","Ελλάδα"],
