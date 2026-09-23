@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /index.backup
+
+Sitemap: https://evelina-apostolaki.gr/sitemap.xml
